@@ -1,5 +1,3 @@
-/* colors - see style guide for docs. 
-Clearly there is more you could place in variables, up to you if you want to use them. My answer does not go beyond colors to keep the code easier to read. */
 
 :root {
     --color1: #001219;
@@ -97,7 +95,7 @@ figcaption a {
 }
 
 
-/* style is doing double duty, styling border color and hover color. Only one declaration usually applies though.  */
+/* style is doing double duty, styling border color and hover color. */
 
 .color2,
 .color2 a:hover {
@@ -189,8 +187,6 @@ footer ul {
 }
 
 
-/* we want a constant distance between the buttons so they remain clickable at all times. flex-basis doesn't do that - sometimes the buttons are too close together. */
-
 footer li {
     margin-right: 1rem;
 }
@@ -200,9 +196,6 @@ footer address {
     margin-top: 2rem;
     font-weight: bold;
 }
-
-
-/* turn on flexbox here - prior to this, elements stacked individually as blocks */
 
 @media (min-width: 550px) {
     section ul,
@@ -225,7 +218,6 @@ footer address {
         display: flow-root;
         max-width: 900px;
     }
-    /* working with an image with a wide width so we have flexibility to set the shape-outside polygon points where we want. The edges of the image limit their placement. In Firefox, you can draw with shape-outside in browser tools */
     .missionimg {
         float: left;
         shape-outside: polygon(35.84% 94.87%, 34.64% 87.05%, 51.64% 4.06%, 55.1% 2.38%);
