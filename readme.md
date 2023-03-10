@@ -1,4 +1,4 @@
-# ARTIFY
+# WALL OF WONDER
 
 Hey you!!
 
