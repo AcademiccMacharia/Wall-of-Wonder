@@ -2,7 +2,7 @@
 
 Hey you!!
 
-Welcome to the Artify readme. A little context on the project:
+Welcome to the Wall of Wonder readme. A little context on the project:
 
 1. This is a project I decide to do in order to help artists especially local ones to get market for their art, because what is the world without art, right?
 2. I'm working on it as a side project so I'm developing features slowly by slowly.
