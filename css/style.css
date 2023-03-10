@@ -61,12 +61,14 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-nav ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: space-between;
+}
+nav li {
+  flex-basis: 48%;
+  margin-bottom: 0.5rem;
 }
 nav li:first-child {
   flex-basis: 100%;
@@ -76,9 +78,19 @@ nav a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
-  color: var(--color1);
+  color: white;
+  background-color: var(--color10);
   display: block;
   padding: 0.5rem;
+  border-radius: 5px; /* keeping design consistent */
+  text-align: center;
+}
+nav li:first-child a{
+  background-color: transparent;
+}
+nav a:hover {
+  background-color: var(--color1);
+  color: var(--color5);
 }
 /* To keep mobile screens from being stupid long, consider setting a max height on the images and hide the overflow. 
 
