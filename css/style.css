@@ -105,7 +105,18 @@ nav a:hover {
   max-height: 454px;
 }
 
-
+/* popular print section style */
+.stripe {
+  background-color: var(--color2);
+  color: white;
+  padding: 1rem 0 2rem 0;
+}
+#featured figure {
+  max-height: 650px;
+}
+#featured img {
+  object-position: 0;
+}
 /* To keep mobile screens from being stupid long, consider setting a max height on the images and hide the overflow. 
 
 Spelled out the individual border styles so border-color could go elsewhere. Styling is the same for all borders except the color. */
@@ -257,6 +268,12 @@ footer address {
   address {
     flex-basis: 49.5%;
   }
+  #popular li:last-child {
+    flex-basis: 100%;
+  }
+  #popular li:last-child figure img {
+    object-position: 0 -350px;
+  }
   /* turn off object position, inherit object-fit: cover */
   figure img {
     object-position: 0;
@@ -304,8 +321,12 @@ footer address {
     margin-left: 100px;
   }
   section li,
-  .social {
+  .social,
+  #popular li:last-child {
     flex-basis: 32.5%;
+  }
+  #popular li:last-child figure img {
+    object-position: 0;
   }
   address {
     flex-basis: 65.5%;
@@ -326,5 +347,11 @@ footer address {
   nav li:nth-child(4),
   nav li:nth-child(5) {
     order: 3;
+  }
+  figure img {
+    transition: transform 0.3s ease-in-out;
+  }
+  figure img:hover {
+    transform: scale(1.1);
   }
 }
